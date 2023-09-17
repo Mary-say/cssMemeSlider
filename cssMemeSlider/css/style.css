@@ -5,7 +5,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15vh;
-    background-color: #35322df3;
+    background-color: rgb(68, 66, 66);
 }
 
 .mem__slider {
@@ -63,11 +63,12 @@ body {
     display: flex;
     width: 100%;
     min-width: 100%;
+    color: #dfdfdf;
 }
 
 .controls label span {
-    background: #6788b6;
-    border: 0.1rem solid #6788b6;
+    background: cornflowerblue;
+    border: 0.2rem solid cornflowerblue;
     border-radius: 50%;
     text-align: center;
 
@@ -81,4 +82,43 @@ body {
 .mem__slider label:hover span{
     border-color: #dfdfdf;
     background-color:  #dfdfdf;
+}
+
+.mem__slider #control_1:checked ~ .captions__controls .controls label:nth-of-type(1) span,
+.mem__slider #control_2:checked ~ .captions__controls .controls label:nth-of-type(2) span,
+.mem__slider #control_3:checked ~ .captions__controls .controls label:nth-of-type(3) span,
+.mem__slider #control_4:checked ~ .captions__controls .controls label:nth-of-type(4) span {
+    border-color: cornflowerblue;
+    background: rgb(68, 66, 66);
+}
+
+.mem__slider #control_1:checked:hover ~ .captions__controls .controls label:nth-of-type(1) span,
+.mem__slider #control_2:checked:hover ~ .captions__controls .controls label:nth-of-type(2) span,
+.mem__slider #control_3:checked:hover ~ .captions__controls .controls label:nth-of-type(3) span,
+.mem__slider #control_4:checked:hover ~ .captions__controls .controls label:nth-of-type(4) span {
+    border-color: #dfdfdf;
+}
+
+.mem__slider #control_1:checked ~ .wrapper .wrapper__img,
+.mem__slider #control_1:checked ~ .captions__controls .slider .captions {
+    transform: translateX(0);
+}
+
+.mem__slider #control_2:checked ~ .wrapper .wrapper__img,
+.mem__slider #control_2:checked ~ .captions__controls .slider .captions {
+    transform: translateX(-100%);
+}
+
+.mem__slider #control_3:checked ~ .wrapper .wrapper__img,
+.mem__slider #control_3:checked ~ .captions__controls .slider .captions {
+    transform: translateX(-200%);
+}
+
+.mem__slider #control_4:checked ~ .wrapper .wrapper__img,
+.mem__slider #control_4:checked ~ .captions__controls .slider .captions {
+    transform: translateX(-300%);
+}
+
+.mem__slider input {
+    display: none;
 }
