@@ -1,17 +1,17 @@
 body {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 15vh;
+    padding: 8vh;
     background-color: rgb(68, 66, 66);
 }
 
 .mem__slider {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 90vw;
     max-width: 50rem;
 }
 
@@ -121,4 +121,23 @@ body {
 
 .mem__slider input {
     display: none;
+}
+
+@media (max-width: 640px) {
+    main {
+        padding: 2vh 2vw;
+    }
+
+    .captions__controls {
+        flex-direction: column-reverse;
+    }
+
+    .slider {
+        align-self: start;
+    }
+
+    .wrapper__img img {
+        height: 40rem;
+        height: auto;
+    }
 }
