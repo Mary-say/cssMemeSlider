@@ -84,6 +84,11 @@ body {
     background-color:  #dfdfdf;
 }
 
+.mem__slider label:active span{
+    border-color: #867676;
+    background-color:  #867676;
+}
+
 .mem__slider #control_1:checked ~ .captions__controls .controls label:nth-of-type(1) span,
 .mem__slider #control_2:checked ~ .captions__controls .controls label:nth-of-type(2) span,
 .mem__slider #control_3:checked ~ .captions__controls .controls label:nth-of-type(3) span,
